@@ -45,6 +45,28 @@ void CommonWord(string word1,string word2)
 		cout<<commonElement[i];
 }
 
+//function to sort
+void StringSort(string word1, string word2)
+{
+	string word = word1+word2;
+	cout<<word;
+	char temp;
+	int length= sizeof(word);
+	for(int i=0;i<length; i++)
+	{
+		for(int j=i+1;j<length;j++)
+		{
+			if(word[i]>word[j])
+			{
+				temp = word[i];
+				word[i] = word[j];
+				word[j] = temp;
+			}
+		}
+	}
+	cout<<"\nSTRING AFTER SORTED = "<<word;
+}
+
 int main() 
 {
 	//variables
@@ -59,4 +81,6 @@ int main()
 	Concatenate(word1, word2);
 	//function call to display common letters in string
 	CommonWord(word1,word2);
+	//function to combine both string and display in apphabetinc order
+	StringSort(word1,word2);
 }
