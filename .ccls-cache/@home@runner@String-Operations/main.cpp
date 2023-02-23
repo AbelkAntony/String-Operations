@@ -28,8 +28,7 @@ void CommonWord(string word1,string word2)
 					{
 						found = true;
 						break;
-					}
-					
+					}	
 				}
 				if(found == false)
 				{
@@ -49,7 +48,6 @@ void CommonWord(string word1,string word2)
 void StringSort(string word1, string word2)
 {
 	string word = word1+word2;
-	cout<<word;
 	char temp;
 	int length= sizeof(word);
 	for(int i=0;i<length; i++)
