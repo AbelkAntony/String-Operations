@@ -49,7 +49,8 @@ void StringSort(string word1, string word2)
 {
 	string word = word1+word2;
 	char temp;
-	int length= sizeof(word);
+	int length= word.length();
+	cout<<endl<<length;
 	for(int i=0;i<length; i++)
 	{
 		for(int j=i+1;j<length;j++)
